@@ -82,6 +82,14 @@ echo "Installing Chromium"
 sudo snap install chromium
 echo "done"
 
+echo "installing LinkFinder"
+git clone https://github.com/GerbenJavado/LinkFinder.git
+cd LinkFinder
+pip3 install -r requirements.txt
+sudo python3 setup.py install
+cd ~/tools/
+echo "done"
+
 echo "installing JSParser"
 git clone https://github.com/nahamsec/JSParser.git
 cd JSParser*
